@@ -11,5 +11,5 @@
    await pyodide.runPythonAsync(`
        from qr_code.main import makecode
    `)
-  
+   
    export default pyodide
