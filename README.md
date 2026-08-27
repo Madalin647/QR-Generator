@@ -1,16 +1,15 @@
-# React + Vite
+# QR Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is fully a client web app that has no use of a Backend server or API.
 
-Currently, two official plugins are available:
+# Pyodide
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In order for the app to generate a QR code it uses an own python script (the qr_code-1.0.0-py3-none-any.whl) that has use of the qr library from python to return an base64 image.
 
-## React Compiler
+For the code to work, the app uses Pyodide that runs on the browser, and that runs the code.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Stack
 
-## Expanding the ESLint configuration
+The project uses vite, react and plain javascript.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The background uses three.js and runs on a different thread.
