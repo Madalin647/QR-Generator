@@ -1,6 +1,6 @@
 import {  useState } from "react"
 import "./App.css"
-import pyodide from "./pyodideLoader"
+import pyodide from "./pyodideLoader.js"
 
 function App() {
 

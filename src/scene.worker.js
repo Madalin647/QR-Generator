@@ -2,7 +2,7 @@ import * as THREE from "three/webgpu"
 
 
 self.onmessage = ({data})=>{
-  const {canvas,w,h} = data
+  const {canvas,w,h,ratio} = data
 
   const cameraZ = 5
   
@@ -16,7 +16,7 @@ self.onmessage = ({data})=>{
   //renderer 
   const renderer = new THREE.WebGPURenderer({antialias:true,canvas});
   renderer.setSize(w,h,false)
-  renderer.setPixelRatio(6);
+  renderer.setPixelRatio(ratio);
 
   //model
 

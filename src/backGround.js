@@ -11,7 +11,7 @@ canvas.height = canvas.clientHeight;
 const offscreen = canvas.transferControlToOffscreen();
 
 worker.postMessage(
-    { canvas: offscreen,w:canvas.width,h:canvas.height},
+    { canvas: offscreen,w:canvas.width,h:canvas.height,ratio:devicePixelRatio},
     [offscreen]
 );
 
