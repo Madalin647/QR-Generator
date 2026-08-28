@@ -13,3 +13,7 @@ For the code to work, the app uses Pyodide that runs on the browser, and that ru
 The project uses vite, react and plain javascript.
 
 The background uses three.js and runs on a different thread.
+
+# Deployment
+
+For deployment the base of the branch deployment is used, the main has a better view of the pyodide related folders and is mend only for development
